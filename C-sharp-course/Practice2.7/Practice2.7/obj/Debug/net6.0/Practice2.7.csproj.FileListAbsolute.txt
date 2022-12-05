@@ -1,0 +1,15 @@
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\bin\Debug\net6.0\Practice2.7.exe
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\bin\Debug\net6.0\Practice2.7.deps.json
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\bin\Debug\net6.0\Practice2.7.runtimeconfig.json
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\bin\Debug\net6.0\Practice2.7.dll
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\bin\Debug\net6.0\Practice2.7.pdb
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.csproj.AssemblyReference.cache
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.AssemblyInfoInputs.cache
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.AssemblyInfo.cs
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.csproj.CoreCompileInputs.cache
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.dll
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\refint\Practice2.7.dll
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.pdb
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\Practice2.7.genruntimeconfig.cache
+D:\Soft\MicrosoftVisualStudio\2022\repos\Practice2.7\Practice2.7\obj\Debug\net6.0\ref\Practice2.7.dll
