@@ -81,7 +81,8 @@ namespace Practice6._6
             path = path.Parent.Parent.Parent;
             if (!File.Exists(path + @"\staff.txt"))
             {
-                File.Create(path + @"\staff.txt");
+                FileStream fs = File.Create(path + @"\staff.txt");
+                fs.Close();
                 Console.WriteLine($"staff.txt successfully created at {path}.");   
             }
             return (path + @"\staff.txt");
