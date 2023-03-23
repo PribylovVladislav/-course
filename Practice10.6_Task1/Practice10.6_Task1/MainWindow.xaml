@@ -1,0 +1,71 @@
+﻿<Window x:Class="Practice10._6_Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice10._6_Task1"
+        mc:Ignorable="d"
+        Title="Banking" MinHeight="630" Height="630" MinWidth="1120" Width="1120" Background="AntiqueWhite">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="145*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="ChoiseBox" SelectedIndex ="0" Margin="0,83,0,0" VerticalAlignment="Top" Width="275" Height="49" SelectionChanged="ChoiseBox_SelectionChanged" Grid.Column="1" FontSize="24" HorizontalAlignment="Center">
+            <ListBoxItem Content="Консультант"/>
+        </ComboBox>
+        <ListBox x:Name="ListBoxClients" Margin="10,83,30,73" Background="CadetBlue" HorizontalContentAlignment="Stretch" SelectionChanged="ListBoxClients_SelectionChanged" Grid.RowSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Initials}" Background="AntiqueWhite"/>
+                        <TextBlock Grid.Column="1" Text="{Binding Phone}" Background="AntiqueWhite"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label x:Name="infoLabel" Background="CadetBlue"  HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Height="265" Width="372" Margin="0,29,0,0">
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <GroupBox Header="Фамилия:" Background="AntiqueWhite" Height="50" Margin="5,0,5,0" Grid.Column ="0" FontSize="18">
+                    <TextBox x:Name="SurnameTextBlock"  Background="AntiqueWhite" Text= "" VerticalAlignment="Center" FontSize="18" Height="30" Margin="0,0,-2,0" />
+                </GroupBox>
+                <GroupBox Header="Имя:" Background="AntiqueWhite"  Height="50" Margin="5,0,5,0" Grid.Row="1" Grid.Column ="0" FontSize="18">
+                    <TextBox x:Name="NameTextBlock" Background="AntiqueWhite" Text= "" VerticalAlignment="Center" FontSize="18" Height="30" Margin="0,0,-2,0"/>
+                </GroupBox>
+                <GroupBox Header="Отчество:" Background="AntiqueWhite" FontSize="18"  Height="50" Margin="5,0,5,0" Grid.Row="2" Grid.Column ="0" >
+                    <TextBox x:Name="PatronymicTextBlock" Background="AntiqueWhite" Text="" Grid.Row="2" Grid.Column ="0" VerticalAlignment="Center" FontSize="18" Height="30" Margin="0,0,-2,0"/>
+                </GroupBox>
+                <GroupBox Header="Серия:" Background="AntiqueWhite" FontSize="18"  Height="50" Margin="5,0,5,0" Grid.Row="0" Grid.Column ="1" >
+                    <TextBox x:Name="SeriesTextBlock" Background="AntiqueWhite" Text= "" Grid.Column ="1" VerticalAlignment="Center" Height="30" Margin="0,0,-2,0" FontSize="18"/>
+                </GroupBox>
+                <GroupBox Header="Номер:" Background="AntiqueWhite" FontSize="18" Height="50" Margin="5,0,5,0" Grid.Row="1" Grid.Column ="1" >
+                    <TextBox x:Name="NumberTextBlock" Background="AntiqueWhite" Text= "" Grid.Row="1" Grid.Column ="1" VerticalAlignment="Center" Height="30" Margin="0,0,-2,0" FontSize="18"/>
+                </GroupBox>
+                <GroupBox Header="Телефон:" Background="AntiqueWhite" FontSize="18" Height="50" Margin="5,0,5,0" Grid.Row="2" Grid.Column ="1" >
+                    <TextBox x:Name="PhoneTextBlock" Background="AntiqueWhite" Text= "" Grid.Row="2" Grid.Column ="1" VerticalAlignment="Center" Height="30" Margin="0,0,-2,0" FontSize="18"/>
+                </GroupBox>
+                <TextBlock x:Name="ErrorTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="0,70,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="14" Width="171" Foreground="#FFDE1414" FontSize="10"/>
+            </Grid>
+        </Label>
+        <Button x:Name="AddButton" Grid.Column="1" Content="Добавить" HorizontalAlignment="Left" Margin="111,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="129" Height="28" FontSize="14" Click="AddButton_Click"/>
+        <Button x:Name="EditButton" Grid.Column="1" Content="Редактировать" HorizontalAlignment="Right" Margin="0,309,111,0" Grid.Row="1" VerticalAlignment="Top" Width="129" Height="28" FontSize="14" Click="EditButton_Click"/>
+    </Grid>
+</Window>
+
